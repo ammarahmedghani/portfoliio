@@ -33,11 +33,12 @@
     color: white;
     text-align: center;
     font-size: 20px;
-    padding: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     width: 200px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
+    margin-top: 10px;
 }
 
 .btnb:hover{
@@ -690,41 +691,41 @@ footer{
     }
   }
 
-
-  @media screen 
-  and (device-width: 360px) 
+/*
+  @media screen and (device-width: 360px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 2) {
     .header-sec h1 {
-        font-size: 40px;
+        font-size: 30px;
       }
       #name{
-          font-size: 40px;
+          font-size: 30px;
       }
       .btnb{
           width: 120px;
           height: 50px;
       }
       #text{
-          font-size: 14px;
+          font-size: 10px;
       }
 }
-/*
-  @media only screen and (max-width: 700px) {
+*/
+  @media only screen and (max-width: 360px) 
+  and (max-height: 640px){
     .header-sec h1 {
-      font-size: 40px;
+      font-size: 30px;
     }
     #name{
-        font-size: 40px;
+        font-size: 30px;
     }
     .btnb{
-        width: 120px;
-        height: 50px;
+        width: 100px;
+        height: 45px;
     }
     #text{
-        font-size: 14px;
+        font-size: 12px;
     }
   }
 
-*/
+
   
