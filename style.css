@@ -1,0 +1,758 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-sec{
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    padding-top: 5%;
+    height: 100vh;
+}
+
+.header-sec h1{
+    color: #ffffff;
+    font-size: 52px;
+    font-family: "Calibri";
+    font-weight: lighter;
+}
+
+.btnb{
+    border-radius: 4px;
+    background-color: black;
+    border-color: white;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 7px;
+}
+
+.btnb:hover{
+    background-color: mediumaquamarine;
+}
+
+.btnb span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btnb span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    
+  }
+  
+
+.btnb:hover span{
+    padding-right: 25px;
+}
+
+.btnb:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+#name{
+    font-size: 53px;
+    font-family: "Calibri";
+    font-weight: normal;
+    color: rgb(134, 13, 118);
+}
+
+.my-work{
+    background-color: white;
+    height: 661px;
+}
+
+.my-nav{
+    overflow: hidden;
+    position: fixed;
+    background-color: rgb(18, 23, 34);
+    top: 0;
+    width: 100%;
+    height: 38px;
+    z-index: 1;
+}
+
+.ee{
+    display: flex;
+    width: 100%;
+    height: 2px;
+    background-color: turquoise;   
+    align-self: flex-end;
+}
+
+.one{
+    visibility: hidden;
+}
+
+.my-nav li{
+    float: left;
+    display: block;
+    padding: 5px 30px 5px 30px;
+    color: white;
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Calibri';
+    align-items: center;
+}
+
+#first{
+    margin-left: 50px;
+}
+
+.my-nav li:hover{
+    cursor: pointer;
+    color: rgb(134, 13, 118);;
+    transition: all 0.6s;
+    opacity: 0.5;
+}
+
+.my-nav .icon {
+    display: none;
+  }
+  
+
+
+
+.about{
+    margin-top: 60px;
+    font-size: 35px ;
+    opacity: 0;
+    font-family: 'Calibri';
+    transform: translateY(20px);
+    transition: 0.7s all ease-in-out;
+}
+
+.about-scroll{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dynamic{            
+    font-family: 'Calibri'; 
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.9s all ease-in;
+}
+
+.dynamic-scroll{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.responsive{    
+    font-family: 'Calibri';         
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.9s all ease-in;
+}
+
+.responsive-scroll{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.intuitive{    
+    font-family: 'Calibri';         
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.9s all ease-in;
+}
+
+.intuitive-scroll{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dynamic2{  
+    font-family: 'Calibri';           
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.9s all ease-in;
+}
+
+.dynamic2-scroll{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+.my-intro{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding-top: 5%;
+    margin-top: 20px;
+}
+
+.my-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 90%;
+    background-color: white;
+    opacity: 0;
+}
+
+.my-img h3{
+    font-family: 'Calibri';
+    color: rgb(46, 46, 46);
+    font-weight: 400;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.my-img p{
+    padding-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(59, 58, 58);
+    font-size: 17px;
+    font-weight: 200;
+    font-variant: normal;
+    text-justify: auto;
+}
+
+.my-exp{
+    flex-wrap: wrap;
+    background-color: white;
+    padding-top: 100px;
+    width: 700px;
+    height: 90%;
+    opacity: 0;
+    right: 100%;
+}
+
+#imagemine{
+    width: 200px;
+    border-radius: 30%;
+    height: 250px;
+}
+
+.css{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+    height: 40px;
+    width: 95%;
+    background-color: rgb(202, 199, 199);
+}
+
+
+#span-css{
+    position: relative;
+    display: flex;
+    padding-top: 11px;
+    align-items: center;
+    justify-content: center;
+    background-color: seagreen;
+    width: 22%;
+    height: 100%;
+}
+
+.per-css{
+    width: 70%;
+    height: 100%;
+    background-color: rgb(14, 82, 59);
+}
+
+.per-css2{
+    animation-name: myanimate;
+    animation-duration: 3s;
+}
+
+.per-html{
+    width: 73%;
+    height: 100%;
+    background-color: rgb(14, 82, 59);
+}
+
+.per-html2{
+    animation-name: myanimate;
+    animation-duration: 3.1s;
+}
+
+.per-js{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(14, 82, 59);
+}
+
+.per-js2{
+    animation-name: myanimate;
+    animation-duration: 2.5s;
+    
+}
+
+.per-php{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(14, 82, 59);
+}
+
+.per-php2{
+    animation-name: myanimate;
+    animation-duration: 7s;
+}
+
+.per-react{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(14, 82, 59);
+}
+
+.per-react2{
+    animation-name: react;
+    animation-duration: 7s;
+}
+
+.per-saas{
+    width: 40%;
+    height: 100%;
+    background-color: rgb(14, 82, 59);
+}
+
+.per-saas2{
+    animation-name: myanimate;
+    animation-duration: 3s;
+}
+
+.per-figma{
+    width: 73%;
+    height: 100%;
+    background-color: rgb(14, 82, 59);
+}
+
+.per-figma2{
+    animation-name: myanimate;
+    animation-duration: 3.4s;
+}
+
+.no{
+    display: flex;
+    margin-left: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    align-self: flex-end;
+}
+
+.animation{
+    opacity: 1;
+    -moz-transition: all 500ms linear;
+    -webkit-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    transition: all 500ms linear;
+    -moz-transform: translate3d(-100px, 0px, 0px);
+    -webkit-transform: translate3d(-100px, 0px, 0px);
+    -o-transform: translate(-100px, 0px);
+    -ms-transform: translate(-100px, 0px);
+    transform: translate3d(0px, -50px, -10px);
+}
+
+.my-project{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.9s all ease-in;
+}
+
+.proj{
+    margin-top: 30px;
+    font-size: 35px ;
+    opacity: 0;
+    font-family: 'Calibri';
+    transform: translateY(20px);
+    transition: 0.7s all ease-in-out;
+}
+
+.proj-scroll{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.realworld{
+    margin-top: 7px;
+    margin-left: 5%;
+    width: 90%;
+    height: 82%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.9s all ease-in;
+    background-color: lightcoral;
+}
+
+
+.realworld-scroll{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.inner{
+    width: auto;
+    height: 300px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    transition: all 0.5s;
+    
+}
+
+.inner :hover img{
+    top: 0%;
+    left: 100%;
+    border-radius: none;
+    align-self: center;
+}
+
+.image-span{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.image-span h2 {
+    visibility: hidden;
+    opacity: 0;
+    margin: 15px 0px 0px;
+    transform: translateY(20px);
+    transition: all 1.2s;
+}
+
+.image-span p{
+    visibility: hidden;
+    opacity: 0;
+    color:  rgb(190, 51, 167) ;
+    font-weight: 500;
+    font-family: 'Calibri';
+    font-size: 16px;
+    margin: 15px 30px 0px 30px;
+    transform: translateY(20px);
+    transition: all 1.4s;
+}
+
+.image-span button{
+    visibility: hidden;
+    opacity: 0;
+    margin: 15px 30px 0px 30px;
+    transform: translateY(20px);
+    transition: all 1.4s;
+
+}
+
+.bb{
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #d32599;
+}
+
+.inner :hover h2{
+    visibility: visible;
+    opacity: 1;
+}
+
+.inner :hover p{
+    visibility: visible;
+    opacity: 1;
+}
+
+.inner :hover button{
+    visibility: visible;
+    opacity: 1;
+}
+
+@keyframes myanimate{
+    0%{
+        width: 5%;
+    }
+
+    50%{
+        width: 50%;
+    }
+
+}
+
+@keyframes react{
+    0%{
+        width: 5%;
+    }
+
+    30%{
+        width: 30%;
+    }
+
+}
+
+@keyframes bluee{
+    Start{
+        left: 0;
+
+    }
+    End{
+        right: 30px;
+    }
+}
+
+.blue-div{
+    display: flex;
+    width: 190px;
+    height: 4px;
+    background-color: rgb(75, 114, 35);
+    margin-left: 50%;
+    opacity: 0;
+    transform: translate(-50%);
+    transition: 0.7s all ease-in-out;
+
+}
+
+.blue-scroll{
+    opacity: 1;
+}
+
+.green-div{
+    display: flex;
+    width: 195px;
+    height: 4px;
+    background-color: rgb(75, 114, 35);
+    margin-left: 50%;
+    opacity: 0;
+    transform: translate(-50%);
+    transition: 0.7s all ease-in-out;
+}
+
+.green-scroll{
+    opacity: 1;
+}
+
+footer{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+
+.contact-div{
+    display: flex;
+    width: 195px;
+    height: 4px;
+    background-color: turquoise;
+    margin-left: 50%;
+    opacity: 0;
+    transform: translate(-50%);
+    transition: 0.7s all ease-in-out;
+
+}
+
+.contact-div-scroll{
+    opacity: 1;
+}
+
+.contact{
+    margin-top: 10%;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.7s all ease-in-out;
+}
+
+.contact h1{
+    margin-top: 5%;
+    font-weight: 500;
+    font-size: 45px;
+    font-family: 'Calibri';
+
+}
+
+.contact-scroll{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.subtext{
+    width: auto;
+    height: auto;
+}
+
+.subtext h3{
+    color: turquoise;
+    margin-top: 3%;
+    font-family: 'Calibri';
+    font-weight: 400;
+}
+
+.my-form{
+    flex-direction: column;
+    margin-top: 5%;
+    width: auto;
+    height: auto;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.my-form input[type=text],textarea{
+    width: 100%;
+    height: 40px;
+
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.submit{
+    width: 40%;
+    height: 40px;
+    margin-top: 5%;
+    cursor: pointer;
+    margin-top: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.submit::before{
+    content: "";
+    position: absolute;
+    font-size: 23px;
+    font-weight: 700;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: turquoise ;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.submit:hover::before{
+    width: 100%;
+}
+.submit:hover{
+    color: black;
+}
+
+.learn{
+    width: 40%;
+    height: 40px;
+    margin-top: 5%;
+    font-family: 'Calibri';
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    background: transparent;
+    border: 2px solid rgb(67, 223, 215) ;
+    outline: none;
+    color: black;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.learn::before{
+    content: "";
+    position: absolute;
+    font-size: 23px;
+    font-weight: 700;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: rgb(28, 182, 156) ;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.learn:hover::before{
+    width: 100%;
+}
+.learn:hover{
+    color: black;
+}
+
+.formi{
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1200px) {
+    .my-project {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .my-project {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .header-sec h1 {
+      font-size: 40px;
+    }
+    #name{
+        font-size: 40px;
+    }
+    .btnb{
+        width: 120px;
+        height: 50px;
+    }
+    #text{
+        font-size: 14px;
+    }
+  }
