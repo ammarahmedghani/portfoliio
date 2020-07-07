@@ -13,7 +13,7 @@
 }
 
 .header-sec{
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     flex-direction: column;
     padding-top: 5%;
     height: 100vh;
@@ -75,7 +75,7 @@
     font-size: 53px;
     font-family: "Calibri";
     font-weight: normal;
-    color: rgb(134, 13, 118);
+    color: #af032e;
 }
 
 .my-work{
@@ -85,9 +85,8 @@
 
 .my-nav{
     overflow: hidden;
-    position: fixed;
-    background-color: rgb(18, 23, 34);
-    top: 0;
+    background-color: rgb(10, 13, 24);
+    top: 570px;
     width: 100%;
     height: 38px;
     z-index: 1;
@@ -99,6 +98,12 @@
     height: 2px;
     background-color: turquoise;   
     align-self: flex-end;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .one{
@@ -127,16 +132,11 @@
     opacity: 0.5;
 }
 
-.my-nav .icon {
-    display: none;
-  }
-  
-
-
-
 .about{
     margin-top: 60px;
     font-size: 35px ;
+    width: auto;
+    height: auto;
     opacity: 0;
     font-family: 'Calibri';
     transform: translateY(20px);
@@ -147,44 +147,6 @@
     opacity: 1;
     transform: translateY(0);
 }
-
-.responsive{    
-    font-family: 'Calibri';         
-    opacity: 0;
-    transform: translateY(20px);
-    transition: 0.9s all ease-in;
-}
-
-.responsive-scroll{
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.intuitive{    
-    font-family: 'Calibri';         
-    opacity: 0;
-    transform: translateY(20px);
-    transition: 0.9s all ease-in;
-}
-
-.intuitive-scroll{
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.dynamic2{  
-    font-family: 'Calibri';           
-    opacity: 0;
-    transform: translateY(20px);
-    transition: 0.9s all ease-in;
-}
-
-.dynamic2-scroll{
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
 
 .my-intro{
     display: flex;
@@ -538,12 +500,11 @@
     display: flex;
     width: 190px;
     height: 4px;
-    background-color: rgb(75, 114, 35);
+    background-color: rgb(10, 13, 24);
     margin-left: 50%;
     opacity: 0;
     transform: translate(-50%);
     transition: 0.7s all ease-in-out;
-
 }
 
 .blue-scroll{
@@ -554,7 +515,7 @@
     display: flex;
     width: 195px;
     height: 4px;
-    background-color: turquoise;
+    background-color: rgb(10, 13, 24);
     margin-left: 50%;
     opacity: 0;
     transform: translate(-50%);
@@ -729,6 +690,26 @@ footer{
     }
   }
 
+
+  @media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+    .header-sec h1 {
+        font-size: 40px;
+      }
+      #name{
+          font-size: 40px;
+      }
+      .btnb{
+          width: 120px;
+          height: 50px;
+      }
+      #text{
+          font-size: 14px;
+      }
+}
+/*
   @media only screen and (max-width: 700px) {
     .header-sec h1 {
       font-size: 40px;
@@ -745,9 +726,5 @@ footer{
     }
   }
 
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+*/
   

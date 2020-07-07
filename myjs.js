@@ -40,13 +40,9 @@ function scrollappear(){
     if(position < screenpos){
         about.classList.add('about-scroll');
         blue.classList.add('blue-scroll');
-        
-        responsive.classList.add('responsive-scroll');
-        intuitive.classList.add('intuitive-scroll');
-        dynamic2.classList.add('dynamic2-scroll');
     }
 }
-console.log(window.scrollY)
+
 window.addEventListener('scroll',scrollappear);
 
 window.addEventListener("load",()=>{
@@ -60,27 +56,18 @@ window.addEventListener("load",()=>{
 })
 
 
-window.addEventListener("load",()=>{
-  
-    if(window.scrollY < 620){
-        nav.classList.add("one");
-    }
-    else{
-        nav.classList.remove("one");
-    }
-})
 
+/*
 window.addEventListener("scroll",()=>{
   
     if(window.scrollY < 650){
         nav.classList.add("one");
-      
     }
     else{
         nav.classList.remove("one");
     }
 })
-
+*/
 btnb.addEventListener('click', () => {
 
     window.scrollTo({
@@ -146,19 +133,18 @@ window.addEventListener('scroll', () => {
         contactdiv.classList.add('contact-div-scroll')
     }
 })
-console.log(innerh)
+
 $('.effect').hide();
 
 
 window.onscroll = function() {myFunction()};
 
-var navbar = document.querySelector('.my-nav');
-var sticky = navbar.offsetTop;
-
+var sticky = nav.offsetTop;
+console.log(sticky)
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    nav.classList.add("sticky")
   } else {
-    navbar.classList.remove("sticky");
+    nav.classList.remove("sticky");
   }
 }
