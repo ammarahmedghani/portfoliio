@@ -40,7 +40,7 @@ function scrollappear(){
     if(position < screenpos){
         about.classList.add('about-scroll');
         blue.classList.add('blue-scroll');
-        dynamic.classList.add('dynamic-scroll');
+        
         responsive.classList.add('responsive-scroll');
         intuitive.classList.add('intuitive-scroll');
         dynamic2.classList.add('dynamic2-scroll');
@@ -150,11 +150,3 @@ console.log(innerh)
 $('.effect').hide();
 
 
-function myFunction() {
-    var x = document.querySelector('.my-nav');
-    if (x.className === "my-nav") {
-      x.className += " responsive";
-    } else {
-      x.className = "my-nav";
-    }
-  }

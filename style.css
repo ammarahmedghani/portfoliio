@@ -33,11 +33,11 @@
     color: white;
     text-align: center;
     font-size: 20px;
-    padding: 10px;
+    padding: 8px;
     width: 200px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 7px;
+    margin: 5px;
 }
 
 .btnb:hover{
@@ -144,18 +144,6 @@
 }
 
 .about-scroll{
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.dynamic{            
-    font-family: 'Calibri'; 
-    opacity: 0;
-    transform: translateY(20px);
-    transition: 0.9s all ease-in;
-}
-
-.dynamic-scroll{
     opacity: 1;
     transform: translateY(0);
 }
@@ -566,7 +554,7 @@
     display: flex;
     width: 195px;
     height: 4px;
-    background-color: rgb(75, 114, 35);
+    background-color: turquoise;
     margin-left: 50%;
     opacity: 0;
     transform: translate(-50%);
