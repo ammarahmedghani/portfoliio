@@ -710,7 +710,7 @@ footer{
       }
 }
 */
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     .header-sec h1 {
       font-size: 30px;
     }
@@ -718,7 +718,7 @@ footer{
         font-size: 30px;
     }
     .btnb{
-        width: 100px;
+        width: 120px;
         height: 45px;
     }
     #text{
