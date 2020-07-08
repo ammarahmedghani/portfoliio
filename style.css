@@ -752,6 +752,16 @@ footer{
     .inner{
         height: 260px;
     }
+    .contact h1{
+        margin-top: 20%;
+        font-size: 32px;
+    }
+    .contact-div{
+        width: 102px;
+    }
+    .subtext h3{
+        font-size: 14px;
+    }
   }
 
 
