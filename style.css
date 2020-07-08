@@ -499,7 +499,7 @@
 
 .blue-div{
     display: flex;
-    width: 190px;
+    width: 135px;
     height: 4px;
     background-color: rgb(10, 13, 24);
     margin-left: 50%;
@@ -536,7 +536,7 @@ footer{
 
 .contact-div{
     display: flex;
-    width: 195px;
+    width: 152px;
     height: 4px;
     background-color: turquoise;
     margin-left: 50%;
@@ -678,6 +678,81 @@ footer{
 .formi{
     flex-wrap: wrap;
 }
+
+.ending{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    width: 100%;
+    height: 150px;
+    background-color: #11151c;
+    flex-direction: column;
+}
+
+.top{
+    width: 50px;
+    height: 50px;
+    background-color: #af032e;
+    transform: translateY(-25px);
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.top:after {
+    content: ' \2660';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 27px;
+    
+}
+
+.top:hover{
+    width: 47px;
+    height: 47px;
+}
+
+.apps{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0.5%;
+    width: 35%;
+    height: 70px;
+    background-color: #11151c;
+}
+
+.apps div :hover{
+    opacity: 0.5;
+}
+
+#insta , #face , #google , #linkdlin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 50px;
+    background-color: #212938;
+    cursor: pointer;
+}
+
+#instasvg{
+    width: 25px;
+}
+
+.proof{
+    background-color: #11151c;
+}
+
+.proof h4{
+    font-family: 'Calibri';
+    font-weight: lighter;
+    color: #af032e;
+}
+
+
 
 @media only screen and (max-width: 1200px) {
     .my-project {
