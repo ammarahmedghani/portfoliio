@@ -710,8 +710,7 @@ footer{
       }
 }
 */
-  @media only screen and (max-width: 360px) 
-  and (max-height: 640px){
+  @media only screen and (max-width: 600px) {
     .header-sec h1 {
       font-size: 30px;
     }
