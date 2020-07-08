@@ -59,10 +59,8 @@
     top: 0;
     right: -20px;
     transition: 0.5s;
-    
   }
   
-
 .btnb:hover span{
     padding-right: 25px;
 }
@@ -190,6 +188,7 @@
     font-weight: 200;
     font-variant: normal;
     text-justify: auto;
+    
 }
 
 .my-exp{
@@ -378,6 +377,7 @@
     background-color: white;
     position: relative;
     overflow: hidden;
+
 }
 
 .inner img{
@@ -718,11 +718,39 @@ footer{
         font-size: 30px;
     }
     .btnb{
-        width: 120px;
-        height: 45px;
+        width: 150px;
+        height: 42px;
     }
+    
     #text{
-        font-size: 12px;
+        font-size: 13px;
+    }
+    .about h1{
+        font-size: 32px;
+    }
+    .blue-div{
+        width: 90px;
+        margin-bottom: 20%;
+    }
+    .proj h1{
+        font-size: 32px;
+    }
+    .green-div{
+        width: 120px;
+    }
+    .my-img p {
+        font-size: 15px;
+        margin: 0px 10px 0px 10px;
+    }
+    #imagemine{
+        width: 150px;
+        height: 200px;
+    }
+    .my-nav{
+        opacity: 0;
+    }
+    .inner{
+        height: 260px;
     }
   }
 
