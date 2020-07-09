@@ -691,9 +691,9 @@ footer{
 
 .top{
     width: 50px;
-    height: 50px;
+    height: 65px;
     background-color: #af032e;
-    transform: translateY(-25px);
+    transform: translateY(-23px);
     cursor: pointer;
     transition: all 0.2s ease-in;
 }
@@ -705,7 +705,7 @@ footer{
     top: 50%;
     transform: translate(-50%,-50%);
     color: white;
-    font-size: 27px;
+    font-size: 25px;
     
 }
 
@@ -842,20 +842,11 @@ footer{
         font-size: 14px;
     }
     .top{
-        width: 45px;
-        height: 45px;
-        transform: translateY(-10px);
+        width: 40px;
+        height: 35px;
+        transform: translateY(-15px);
     }
 
-    .top:after {
-        content: ' \2660';
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        color: white;
-        font-size: 20px;
-    }
 
     .ending{
         margin-top: 10%;
