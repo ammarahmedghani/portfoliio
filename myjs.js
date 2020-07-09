@@ -22,6 +22,7 @@ var contactdiv = document.querySelector('.contact-div')
 var contact = document.querySelector('.contact')
 
 
+
 //animations
 
 function scrollappear(){
@@ -134,13 +135,21 @@ window.addEventListener('scroll', () => {
     }
 })
 
+var topi = document.querySelector(".top");
+topi.addEventListener('click', () => {
+    window.scrollTo({
+        top : 0 ,
+        behavior : "smooth"
+    });
+});
+
+
 $('.effect').hide();
 
 
 window.onscroll = function() {myFunction()};
 
 var sticky = nav.offsetTop;
-console.log(sticky)
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     nav.classList.add("sticky")
