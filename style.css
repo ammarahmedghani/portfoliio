@@ -91,6 +91,10 @@
     z-index: 1;
 }
 
+.my-mob-nav{
+    display: none;
+}
+
 .ee{
     display: flex;
     width: 100%;
@@ -826,8 +830,14 @@ footer{
         height: 200px;
     }
     .my-nav{
-        opacity: 0;
+        display: none;
     }
+
+    .sticky{
+        display: none;
+    }
+
+
     .inner{
         height: 260px;
     }
@@ -847,7 +857,6 @@ footer{
         transform: translateY(-15px);
     }
 
-
     .ending{
         margin-top: 10%;
     }
@@ -858,6 +867,44 @@ footer{
     #instasvg{
         width: 15px;
     }
+
+    .my-mob-nav{
+        display: block;
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        height: 6.8vh;
+        top: 0;
+        background-color: black;
+        z-index: 1;
+    }
+    
+    .endline{
+        display: flex;
+        width: 100%;
+        height: 3px;
+        margin-top: 4px;
+        background-color: lightseagreen;
+    }
+
+    #nav-items{
+        display: none;
+    }
+
+    .svgmen{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5px;
+        
+    }
+    
+    #menusvg{
+        margin-top: 7px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
   }
 
 
