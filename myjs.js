@@ -1,8 +1,12 @@
 var btnb = document.querySelector(".btnb");
 var about = document.querySelector("#ab");
 var home = document.querySelector("#first");
-var potfolio = document.querySelector("#potfolio");
+var home = document.querySelector("#home");
+var about = document.querySelector("#about");
+var potfolio = document.querySelector("#potolio");
+var potfolio = document.querySelector("#pot");
 var contacti = document.querySelector("#contact");
+var contactii = document.querySelector("#cont");
 var myexp = document.querySelector(".my-exp");
 var picdiv = document.querySelector(".my-img");
 var projects = document.querySelectorAll(".inner");
@@ -20,7 +24,9 @@ var spanfigma = document.querySelector(".per-figma");
 var project = document.querySelector('.proj');
 var green = document.querySelector('.green-div');
 var contactdiv = document.querySelector('.contact-div')
-var contact = document.querySelector('.contact')
+var contact = document.querySelector('.contact');
+var menusvg = document.querySelector('#menusvg');
+var onclick = document.querySelector('.onclick');
 console.log(contacti)
 
 
@@ -45,6 +51,8 @@ function scrollappear(){
     }
 }
 
+
+
 window.addEventListener('scroll',scrollappear);
 
 window.addEventListener("load",()=>{
@@ -59,19 +67,9 @@ window.addEventListener("load",()=>{
 
 
 
-/*
-window.addEventListener("scroll",()=>{
-  
-    if(window.scrollY < 650){
-        nav.classList.add("one");
-    }
-    else{
-        nav.classList.remove("one");
-    }
-})
-*/
-btnb.addEventListener('click', () => {
 
+btnb.addEventListener('click', () => {
+    onclick.style.visibility = "hidden";
     window.scrollTo({
         top: innerh,
         left: 0,
@@ -81,6 +79,7 @@ btnb.addEventListener('click', () => {
 })
 
 home.addEventListener('click',()=>{
+    onclick.style.visibility = "hidden";
     window.scrollTo({
         top: 0,
         left: 0,
@@ -88,8 +87,9 @@ home.addEventListener('click',()=>{
       });
 })
 
-potfolio.addEventListener('click',()=>{
 
+potfolio.addEventListener('click',()=>{
+    onclick.style.visibility = "hidden";
     window.scrollTo({
         top: innerh + innerh + 10,
         left: 0,
@@ -98,7 +98,7 @@ potfolio.addEventListener('click',()=>{
 })
 
 about.addEventListener('click',()=>{
-
+    onclick.style.visibility = "hidden";
     window.scrollTo({
         top: innerh,
         left: 0,
@@ -110,6 +110,15 @@ contacti.addEventListener('click',()=>{
 
     window.scrollTo({
         top: innerh + innerh + innerh + 200,
+        left: 0,
+        behavior: 'smooth'
+      });
+})
+
+contactii.addEventListener('click',()=>{
+    onclick.style.visibility = "hidden";
+    window.scrollTo({
+        top: innerh + innerh + innerh + innerh + innerh,
         left: 0,
         behavior: 'smooth'
       });
@@ -168,8 +177,7 @@ function myFunction() {
   }
 }
 
-var menusvg = document.querySelector('#menusvg');
-var onclick = document.querySelector('.onclick');
+
 
 onclick.style.visibility = "hidden";
 console.log(onclick.style.visibility)
@@ -180,7 +188,5 @@ menusvg.addEventListener('click',()=>{
         onclick.style.visibility = "visible";
     }else{
         onclick.style.visibility = "hidden"
-    }
-
-    
+    } 
 })
