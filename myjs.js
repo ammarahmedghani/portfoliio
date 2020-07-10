@@ -2,6 +2,7 @@ var btnb = document.querySelector(".btnb");
 var about = document.querySelector("#ab");
 var home = document.querySelector("#first");
 var potfolio = document.querySelector("#potfolio");
+var contacti = document.querySelector("#contact");
 var myexp = document.querySelector(".my-exp");
 var picdiv = document.querySelector(".my-img");
 var projects = document.querySelectorAll(".inner");
@@ -20,7 +21,7 @@ var project = document.querySelector('.proj');
 var green = document.querySelector('.green-div');
 var contactdiv = document.querySelector('.contact-div')
 var contact = document.querySelector('.contact')
-
+console.log(contacti)
 
 
 //animations
@@ -105,6 +106,15 @@ about.addEventListener('click',()=>{
       });
 })
 
+contacti.addEventListener('click',()=>{
+
+    window.scrollTo({
+        top: innerh + innerh + innerh + 200,
+        left: 0,
+        behavior: 'smooth'
+      });
+})
+
 window.addEventListener('scroll',()=>{
     
     if(window.scrollY > 701){
@@ -157,3 +167,20 @@ function myFunction() {
     nav.classList.remove("sticky");
   }
 }
+
+var menusvg = document.querySelector('#menusvg');
+var onclick = document.querySelector('.onclick');
+
+onclick.style.visibility = "hidden";
+console.log(onclick.style.visibility)
+menusvg.addEventListener('click',()=>{
+    
+    if(onclick.style.visibility == "hidden"){
+        console.log(onclick.style.visibility)
+        onclick.style.visibility = "visible";
+    }else{
+        onclick.style.visibility = "hidden"
+    }
+
+    
+})

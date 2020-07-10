@@ -135,6 +135,10 @@
     opacity: 0.5;
 }
 
+.onclick{
+    display: none;
+}
+
 .about{
     margin-top: 60px;
     font-size: 35px ;
@@ -762,6 +766,7 @@ footer{
 
 
 
+
 @media only screen and (max-width: 1200px) {
     .my-project {
       grid-template-columns: 1fr 1fr;
@@ -805,6 +810,11 @@ footer{
         height: 42px;
     }
     
+    .submit{
+        width: 40%;
+        height: 40px;
+    }
+
     #text{
         font-size: 13px;
     }
@@ -887,25 +897,44 @@ footer{
         background-color: lightseagreen;
     }
 
-    #nav-items{
-        display: none;
+#nav-items li{
+    list-style-type: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.onclick{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 30%;
+        background-color: rgb(132, 14, 241);
+        z-index: 1;
+        top: 7%;
     }
 
-    .svgmen{
+
+.svgmen{
         display: flex;
         justify-content: flex-end;
         margin-right: 5px;
         
+}
+   
+.header-sec{
+        position: relative;
+        z-index: 0;
     }
     
-    #menusvg{
+    
+    
+#menusvg{
         margin-top: 7px;
         width: 30px;
         height: 25px;
         cursor: pointer;
-    }
+}
 
   }
-
 
   
