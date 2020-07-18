@@ -1,10 +1,10 @@
 var btnb = document.querySelector(".btnb");
 var about = document.querySelector("#ab");
 var home = document.querySelector("#first");
-var home = document.querySelector("#home");
-var about = document.querySelector("#about");
-var potfolio = document.querySelector("#potolio");
-var potfolio = document.querySelector("#pot");
+var home_mob = document.querySelector("#home");
+var about_mob = document.querySelector("#about");
+var potfolio = document.querySelector("#potfolio");
+var potfolio_mob = document.querySelector("#pot");
 var contacti = document.querySelector("#contact");
 var contactii = document.querySelector("#cont");
 var myexp = document.querySelector(".my-exp");
@@ -27,7 +27,7 @@ var contactdiv = document.querySelector('.contact-div')
 var contact = document.querySelector('.contact');
 var menusvg = document.querySelector('#menusvg');
 var onclick = document.querySelector('.onclick');
-console.log(contacti)
+
 
 
 //animations
@@ -87,17 +87,45 @@ home.addEventListener('click',()=>{
       });
 })
 
+home_mob.addEventListener('click',()=>{
+    onclick.style.visibility = "hidden";
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+})
 
 potfolio.addEventListener('click',()=>{
     onclick.style.visibility = "hidden";
     window.scrollTo({
-        top: innerh + innerh + 10,
+        top: innerh + innerh ,
+        left: 0,
+        behavior: 'smooth'
+      });
+})
+
+potfolio_mob.addEventListener('click',()=>{
+    onclick.style.visibility = "hidden";
+    window.scrollTo({
+        top: innerh + innerh + 300,
         left: 0,
         behavior: 'smooth'
       });
 })
 
 about.addEventListener('click',()=>{
+
+    onclick.style.visibility = "hidden";
+    window.scrollTo({
+        top: innerh,
+        left: 0,
+        behavior: 'smooth'
+      });
+})
+
+about_mob.addEventListener('click',()=>{
+
     onclick.style.visibility = "hidden";
     window.scrollTo({
         top: innerh,
@@ -180,13 +208,25 @@ function myFunction() {
 
 
 onclick.style.visibility = "hidden";
-console.log(onclick.style.visibility)
+
 menusvg.addEventListener('click',()=>{
     
     if(onclick.style.visibility == "hidden"){
-        console.log(onclick.style.visibility)
         onclick.style.visibility = "visible";
     }else{
         onclick.style.visibility = "hidden"
     } 
 })
+
+
+
+//form submission
+/*
+let from_name = document.getElementById("from-name");
+let from_email = document.getElementById("from-email");
+let from_msg = document.getElementById("subject");
+
+let mymail = "ammarghani23@gmail.com";
+
+
+window.open('mailto:'+mymail+'?subject=subject&body=body');*/
