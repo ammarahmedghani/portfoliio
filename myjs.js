@@ -217,16 +217,3 @@ menusvg.addEventListener('click',()=>{
         onclick.style.visibility = "hidden"
     } 
 })
-
-
-
-//form submission
-/*
-let from_name = document.getElementById("from-name");
-let from_email = document.getElementById("from-email");
-let from_msg = document.getElementById("subject");
-
-let mymail = "ammarghani23@gmail.com";
-
-
-window.open('mailto:'+mymail+'?subject=subject&body=body');*/
