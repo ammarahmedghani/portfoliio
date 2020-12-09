@@ -238,7 +238,7 @@
 }
 
 .per-css{
-    width: 70%;
+    width: 75%;
     height: 100%;
     background-color: rgb(14, 82, 59);
 }
@@ -249,7 +249,7 @@
 }
 
 .per-html{
-    width: 73%;
+    width: 75%;
     height: 100%;
     background-color: rgb(14, 82, 59);
 }
@@ -272,7 +272,7 @@
 }
 
 .per-php{
-    width: 50%;
+    width: 40%;
     height: 100%;
     background-color: rgb(14, 82, 59);
 }
@@ -283,7 +283,7 @@
 }
 
 .per-react{
-    width: 30%;
+    width: 70%;
     height: 100%;
     background-color: rgb(14, 82, 59);
 }
@@ -665,6 +665,23 @@ footer{
     transition: all 0.5s;
 }
 
+.github{
+    width: 40%;
+    height: 40px;
+    margin-top: 5%;
+    font-family: 'Calibri';
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    background: transparent;
+    border: 2px solid rgb(0, 0, 0) ;
+    outline: none;
+    color: white;
+    position: relative;
+    transition: all 0.5s;
+}
+
 .inner a{
     text-decoration: none;
     color: black;
@@ -684,11 +701,38 @@ footer{
     transition: all 0.5s;
 }
 
+.github::before{
+    content: "";
+    position: absolute;
+    font-size: 23px;
+    font-weight: 700;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: rgb(0, 0, 0) ;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+
+
 .learn:hover::before{
     width: 100%;
 }
 .learn:hover{
     color: black;
+}
+
+.github:hover::before{
+    width: 100%;
+}
+.github:hover{
+    color: black;
+}
+
+.github:hover a{
+    color: rgb(255, 255, 255);
 }
 
 .formi{
